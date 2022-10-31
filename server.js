@@ -17,6 +17,7 @@ const server = http.createServer((req, res) => {
       res.statusCode = 200;
       break;
     default:
+      path += 'index.html';
       res.setHeader('Location', '/');
       res.statusCode = 301;
       break;
