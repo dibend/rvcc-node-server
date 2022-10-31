@@ -13,7 +13,6 @@ const server = http.createServer((req, res) => {
       res.end(data);
     }
   });
-  res.end('<h1>Hello World</h1>');
 });
 
 server.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
